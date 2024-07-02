@@ -1,0 +1,34 @@
+.Header {
+	height: 5rem;
+	width: 100%;
+	background-color: rgba(14, 187, 187, 0.212);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	nav {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+
+		a {
+			text-decoration: none;
+			color: rgba(49, 51, 51, 0.842);
+			font-size: clamp(10px, 1.2rem, 30px);
+			font-weight: 700;
+			text-transform: uppercase;
+			font-family: var(--f2);
+			transition: all ease-in-out 0.3s;
+
+			&.active {
+				color: rgb(27, 116, 32);
+				text-decoration-line: underline;
+				text-decoration-thickness: 3px;
+			}
+			&:not(.active):hover {
+				color: rgba(27, 116, 31, 0.747);
+			}
+		}
+	}
+}
